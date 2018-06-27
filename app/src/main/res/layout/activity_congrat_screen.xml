@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        tools:context="com.example.user.quizapp.CongratulationScreen">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Congratulations !"
+            android:fontFamily="sans-serif"
+            android:textSize="25sp"
+            android:textStyle="normal"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            app:cardCornerRadius="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/colorPrimary"
+            tools:cardElevation="8dp"
+            tools:cardPreventCornerOverlap="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/awesome_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Awesome !"
+                    android:textSize="30sp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/congrat"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:src="@drawable/congrat"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/you_tv"
+                        android:layout_below="@id/congrat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Score : "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="30sp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginTop="5dp"/>
+
+                    <Button
+                        android:layout_below="@id/you_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RePlay"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="20dp"
+                        android:layout_centerInParent="true"
+                        android:onClick="replay"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

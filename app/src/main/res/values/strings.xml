@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="French">French</string>
+    <string name="english">English</string>
+    <string name="Continue">continue</string>
+    <string name="no_cheating">No cheating</string>
+    <string name="start_game">start game</string>
+    <string name="answer">Answer</string>
+    <string name="hint">Hint</string>
+    <string name="next">Next</string>
+    <string name="camry_motor_is_the_product_of_which_company">CAMRY MOTOR is the product of which company?</string>
+    <string name="nwankwo_kanu">Nwankwo Kanu</string>
+    <string name="jay_jay_okocha">Jay Jay Okocha</string>
+    <string name="mikel_obi">Mikel Obi</string>
+    <string name="about_quiz">About Quiz</string>
+    <string name="current_affairs">Current affairs</string>
+    <string name="what_do_you_know_about_the_world">What do you Know About the World ?</string>
+</resources>
