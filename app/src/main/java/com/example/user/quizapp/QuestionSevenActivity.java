@@ -43,19 +43,13 @@ public class QuestionSevenActivity extends AppCompatActivity {
         }
         else {
             // no option is choosen
-            showSnackbar(view, "You have to select an option", "OK");
+            showSnackbar(view, "You have to select the correct option", "OK");
         }
     }
 
     public boolean isAnyOptionChoosen() {
 
-        if (checkBox.isChecked()){
-            return true;
-        }
-        else if (checkBox1.isChecked()){
-            return true;
-        }
-        else if (checkBox2.isChecked()){
+        if (checkBox.isChecked()&& checkBox1.isChecked()&& !checkBox2.isChecked()){
             return true;
         }
         else

@@ -19,8 +19,8 @@ public class CongratulationScreen extends AppCompatActivity {
 
         int totalScore = getUserTotalScore();
 
-        TextView scoreTextView = findViewById(R.id.you_tv);
-        scoreTextView.setText("Score: " +totalScore);
+        //displays user score
+        Toast.makeText(CongratulationScreen.this, "Score is: "+totalScore, Toast.LENGTH_LONG).show();
 
         ImageView failedImage = findViewById(R.id.congrat);
 
@@ -44,7 +44,7 @@ public class CongratulationScreen extends AppCompatActivity {
      * method that increments the users current score in shared preferences
      */
     public int getUserTotalScore(){
-        //1. Create a sharedpreference object
+        //1. Create a shared preference object
         SharedPreferences sharedPreferences = getSharedPreferences("sp", Context.MODE_PRIVATE);
         //2. get total score
         int totalScore = sharedPreferences.getInt("score", 0);

@@ -33,7 +33,7 @@ public class QuestionFourActivity extends AppCompatActivity {
 
             EditText editWord = (EditText) findViewById(R.id.edit_answer);
 
-            if (editWord.getText().toString().isEmpty()) {
+            if (editWord.getText().toString().trim().isEmpty()) {
                 return false;
 
             } else {
@@ -87,9 +87,11 @@ public class QuestionFourActivity extends AppCompatActivity {
 
         EditText editWord = (EditText) findViewById(R.id.edit_answer);
 
-        Log.e("TAG", "answer " + editWord.getText().toString().toLowerCase());
+        Log.e("TAG", "answer " + editWord.getText().toString().trim().toLowerCase());
+
+
         //option B is correct increase persons score
-        if (editWord.getText().toString().toLowerCase().equals(answer)){
+        if (editWord.getText().toString().trim().equalsIgnoreCase(answer)){
             incrementScore();
         }
 

@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Congratulations !"
+            android:text="@string/congratulations"
             android:fontFamily="sans-serif"
             android:textSize="25sp"
             android:textStyle="normal"
@@ -52,7 +52,7 @@
                     android:id="@+id/awesome_tv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Awesome !"
+                    android:text="@string/awesome"
                     android:textSize="30sp"
                     android:padding="10dp"
                     android:gravity="center"
@@ -70,23 +70,11 @@
                         android:layout_marginTop="10dp"
                         android:layout_centerHorizontal="true"/>
 
-                    <TextView
-                        android:id="@+id/you_tv"
-                        android:layout_below="@id/congrat"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Score : "
-                        android:textColor="@color/colorAccent"
-                        android:textSize="30sp"
-                        android:gravity="center"
-                        android:padding="5dp"
-                        android:layout_marginTop="5dp"/>
-
                     <Button
-                        android:layout_below="@id/you_tv"
+                        android:layout_below="@id/congrat"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="RePlay"
+                        android:text="@string/replay"
                         android:textAllCaps="true"
                         android:layout_marginTop="20dp"
                         android:layout_marginRight="30dp"

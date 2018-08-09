@@ -29,7 +29,7 @@ public class QuestionEightActivity extends AppCompatActivity {
 
         EditText editWord = (EditText) findViewById(R.id.edit_answer);
 
-        if (editWord.getText().toString().isEmpty()) {
+        if (editWord.getText().toString().trim().isEmpty()) {
             return false;
 
         } else {
@@ -54,8 +54,6 @@ public class QuestionEightActivity extends AppCompatActivity {
         }
     }
     public void hint(View view) {
-        //to display hint
-       /* Snackbar.make(view, "school", Snackbar.LENGTH_SHORT).show();*/
 
         Snackbar.make(view, "No cheating", Snackbar.LENGTH_LONG)
                 .setAction("Thanks", new View.OnClickListener() {
@@ -98,7 +96,7 @@ public class QuestionEightActivity extends AppCompatActivity {
         EditText editWord = (EditText) findViewById(R.id.edit_answer);
 
         //option B is correct increase persons score
-        if (editWord.getText().toString().toLowerCase().equals(answer)){
+        if (editWord.getText().toString().trim().equalsIgnoreCase(answer)){
             incrementScore();
         }
     }

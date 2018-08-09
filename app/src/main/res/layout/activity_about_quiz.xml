@@ -12,8 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorPrimaryDark"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
@@ -77,10 +76,9 @@
                     android:textColor="@color/colorAccent"
                     android:textSize="20sp"
                     android:padding="5dp"
-                    android:text="That Knowledge is about to be tested"
+                    android:text="@string/that_knowledge_is_about_to_be_tested"
                     android:layout_gravity="center"
-                    android:layout_margin="5dp"
-                    />
+                    android:layout_margin="5dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -89,7 +87,7 @@
                     android:textSize="20sp"
                     android:padding="5dp"
                     android:textAllCaps="true"
-                    android:text="Enjoy Yourself"
+                    android:text="@string/enjoy_yourself"
                     android:layout_gravity="center"
                     android:layout_margin="5dp" />
 
@@ -110,7 +108,12 @@
                     android:textSize="20sp"
                     android:onClick="startGame"
                     android:layout_marginBottom="15dp" />
+
             </RelativeLayout>
+
         </android.support.v7.widget.CardView>
+
     </LinearLayout>
+
 </ScrollView>
+

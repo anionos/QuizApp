@@ -30,7 +30,7 @@ public class QuestionSixActivity extends AppCompatActivity {
 
         EditText editWord = (EditText) findViewById(R.id.edit_answer);
 
-        if (editWord.getText().toString().isEmpty()) {
+        if (editWord.getText().toString().trim().isEmpty()) {
             return false;
         } else {
             return true;
@@ -69,7 +69,7 @@ public class QuestionSixActivity extends AppCompatActivity {
         EditText editWord = (EditText) findViewById(R.id.edit_answer);
 
         //option B is correct increase persons score
-        if (editWord.getText().toString().toLowerCase().equals(answer)){
+        if (editWord.getText().toString().trim().equalsIgnoreCase(answer)){
             incrementScore();
         }
 

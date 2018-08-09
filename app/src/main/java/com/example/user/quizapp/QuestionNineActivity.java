@@ -34,13 +34,7 @@ public class QuestionNineActivity extends AppCompatActivity {
      */
     public boolean isAnyOptionChoosen() {
 
-        if (checkBox.isChecked()){
-            return true;
-        }
-        else if (checkBox1.isChecked()){
-            return true;
-        }
-        else if (checkBox2.isChecked()){
+        if(checkBox.isChecked() && !checkBox1.isChecked() && !checkBox2.isChecked()){
             return true;
         }
         else
